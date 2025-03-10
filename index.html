@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <script src="/scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,21 +26,24 @@
         </nav>
     </header>
     <main>
-        <div class="main-section">
-            <section class="card">
+        <section class = "card" id="about">
+            <div>
                 <h2>About Me</h2>
-                <img src="/images/mateus-nunes.jpg" alt="Mateus Profile Picture">
-                <p class="biography" >With 23 years of experience helping individuals and businesses establish a strong digital presence and optimize customer interactions to drive sales using cutting-edge technology. Based in Brazil, I am passionate about sports, a dedicated husband, and a proud father.</p>
-                
-                <h3>Sorocaba, Brazil</h3>
-                <img src="/images/bandeira-do-brasil.webp" alt="Brazil Flag">
-                <caption>Flag of Brazil</caption>
+                <img src="/images/mateus-nunes.jpg" id="profilepic" alt="Mateus Profile Picture">
+                <p class="biography">With 23 years of experience helping individuals and businesses establish a strong digital presence and optimize customer interactions to drive sales using cutting-edge technology. Based in Brazil, I am passionate about sports, a dedicated husband, and a proud father.</p>
+            </div>
+            <div class="city">
+                <h2>Sorocaba, Brazil</h2>
+                <img src="/images/bandeira-do-brasil.webp" id="brflag" alt="Brazil Flag">  
                 <p>Sorocaba is a municipality in the state of São Paulo, Brazil. Sorocaba is the eighth-largest city in the state of São Paulo. Outside the Greater São Paulo region, it ranks behind only Campinas, São José dos Campos and Ribeirão Preto. It is part of the Metropolitan Region of Sorocaba.</p>
-            </section>
+                <p>Flag of Brazil</p>
+            </div>   
+        </section>
         
-            <section class="card2">
+        <section class = "card" id="city">
+            <div>
                 <h2>Web Dev Resources</h2>
-                <ul>
+                <ul class="resources">
                     <li><a href="https://dev.to/" target="_blank">Community</a></li>
                     <li><a href="https://www.smashingmagazine.com/" target="_blank">Magazine</a></li>
                     <li><a href="https://css-tricks.com/" target="_blank">Tricks</a></li>
@@ -47,12 +51,13 @@
                     <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
                     <li><a href="#imageplaceholder" target="_blank">Placeholder</a></li>
                 </ul>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; <span id="currentyear"></span> Mateus Nunes | Brazil</p>
-        <p> <span id="lastModified"></span></p>
+        <p>&copy; <span id="currentYear"></span> Mateus Nunes | Brazil</p>
+        <p> Last updated <span id="lastModified"></span></p>
     </footer>
 </body>
 </html>
