@@ -82,7 +82,7 @@ main {
 
 
 #profilepic {
-	display: absoulte;
+	display: absolute;
 	width:20%;
 	margin: 2rem;
 	float: right;
@@ -90,7 +90,7 @@ main {
 }
 
 #brflag {
-	display: absoulte;
+	display: absolute;
 	width:25%;
 	margin: 2rem;
 	float: left;
