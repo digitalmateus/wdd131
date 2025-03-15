@@ -4,7 +4,8 @@
 }
 
 header, main, footer {
-    max-width: 920px;
+    max-width: 640px;
+     
 }
 
 header {
@@ -93,14 +94,14 @@ main .pictures figcaption {
 }
 
 main .pictures img {
-    width: 95%; 
-    height: auto; 
-    border-radius: 0.5rem; 
+    width: 100%; 
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0.5rem; /* Optional: add rounded corners */
 }
 
 footer {
     text-align: center;
     color: white;
-    background-color: #4B0082; /* Match the background color */
+    background-color: #051206; /* Match the background color */
     padding: 1rem;
 }
