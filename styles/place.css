@@ -77,6 +77,6 @@ footer {
 }
 
 .weathericon img {
-    width: 40px;  /* Adjust as needed */
-    height: auto; /* Maintains aspect ratio */
+    width: 40px;  
+    height: auto; 
 }
