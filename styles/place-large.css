@@ -1,4 +1,10 @@
 @media screen and (min-width: 650px) {
+
+    * {
+        font-family: "Roboto", sans-serif;
+        margin: 0 auto;
+    }
+
     body {
         display: flex;
         flex-direction: column;
