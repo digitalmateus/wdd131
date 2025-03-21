@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazil | My Place by Mateus Nunes | WDD 131</title>
+    <meta name="description" content="Country Page assidment for WDD 131">
+    <meta name="author" content="Mateus Nunes">
+    <link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="screen and (min-width: 650px)">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+       <h1>Brazil</h1>
+    </header>
+    <main>
+        <div class="image">
+            <img src="images/brazil_rio.webp" alt="Brazil Image">
+        </div>
+        
+        <div class="container" id="data">
+            <div class="row">
+                <div class="title">Data</div>
+                <div class="value"> ---- </div>
+            </div>
+            <div class="row">
+                <div class="label">Area:</div>
+                <div class="value">587,041 sq km</div>
+            </div>
+            <div class="row">
+                <div class="label">Population:</div>
+                <div class="value">27,691,018</div>
+            </div>
+            <div class="row">
+                <div class="label">Capital:</div>
+                <div class="value">Brasilia</div>
+            </div>
+            <div class="row">
+                <div class="label">Languages:</div>
+                <div class="value">Portuguese</div>
+            </div>
+            <div class="row">
+                <div class="label">Currency:</div>
+                <div class="value">Real</div>
+            </div>
+            <div class="row">
+                <div class="label">Time zone:</div>
+                <div class="value">GMT +3</div>
+            </div>
+            <div class="row">
+                <div class="label">Calling Code:</div>
+                <div class="value">+55</div>
+            </div>
+            <div class="row">
+                <div class="label">Internet TLD:</div>
+                <div class="value">.br</div>
+            </div>
+        </div>
+       
+
+            
+        <div class="container" id="weather">
+            <div class="row">
+                <div class="title">Weather</div>
+                <div class="weathericon">
+                    <img src="images/weather_icon_2.svg" alt="Weather Icon">
+                </div>
+            </div>
+            <div class="row">
+                <div class="label">Temperature:</div>
+                <div class="value">27°C</div>
+            </div>
+            <div class="row">
+                <div class="label">Conditions:</div>
+                <div class="value">Mostly Cloudy</div>
+            </div>
+            <div class="row">
+                <div class="label">Wind:</div>
+                <div class="value">Brasilia</div>
+            </div>
+            <div class="row">
+                <div class="label">Wind Chill:</div>
+                <div class="value" id="windChillValue">N/A</div>
+            </div>
+        </div>        
+  
+    </main>
+
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Mateus Nunes | Brazil</p>
+        <p> Last updated <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>

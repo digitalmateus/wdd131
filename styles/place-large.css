@@ -1,0 +1,43 @@
+@media screen and (min-width: 650px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image {
+        display:flex;
+        max-width: 1920px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .container {
+        max-width: 250px;
+        height: auto;
+
+    }
+    #data {
+        position: absolute;
+        width: 180px;
+        font-size: 0.7rem;
+        top:20%;
+        left: 5%;
+    }
+    
+    #weather {
+        position: absolute;
+        width: 180px;
+        font-size: 0.7rem;
+        top:60%;
+        left: 80%;
+    }
+    .container .title {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        width:100%;
+        padding: 2rem;
+    }
+}
+

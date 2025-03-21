@@ -1,0 +1,82 @@
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+}
+
+body {
+   display: flexbox;
+   text-align: center;
+}
+
+header {
+    flex:1 1 auto;
+    align-content:space-between;
+    width: 100%;
+}
+
+h1 {
+    background-color: rgb(0, 51, 15);
+    color: rgb(255, 251, 0);
+    padding: 1rem;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    max-width: 1500px;
+    display: block;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    border: 1px solid #ccc;
+    padding: 10px 20px 10px 20px;
+    background-color: #f9f9f9;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.title {
+    font-weight: bold;
+    text-align: right;
+    flex: 1;
+    padding-right: 10px;
+    font-size:xx-large;
+    
+}
+
+.label {
+    font-weight: bold;
+    text-align: right;
+    flex: 1;
+    padding-right: 10px;
+}
+
+.value {
+    text-align: left;
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color:rgb(4, 49, 7) ;
+    color: aliceblue;
+}
+
+.weathericon img {
+    width: 40px;  /* Adjust as needed */
+    height: auto; /* Maintains aspect ratio */
+}
