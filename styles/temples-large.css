@@ -1,5 +1,23 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 40em) {
   
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+
+  .navigation a{
+    text-align: center;
+  }
+
+  #menu {
+    display: none;
+  }
+
+/* 
   header {
       background-color: rgb(4, 28, 11);
       color: white;
@@ -10,7 +28,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: even;
-}
+} */
 main .pictures {
   display: grid;
   grid-template-columns:1fr 1fr 1fr;

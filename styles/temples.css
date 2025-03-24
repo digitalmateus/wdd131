@@ -3,6 +3,58 @@
     font-family: "Roboto", sans-serif;
 }
 
+#menu {
+    display:block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: rgb(0, 0, 62);
+    color: aliceblue;
+}
+
+#menu::before {
+    content: "|||";
+}
+
+nav {
+    background-color: rgba(11, 35, 6, 0.601);
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a{
+    display: block;
+    padding: .75rem;
+    text-align: center;
+    text-decoration: none;
+    color: #9de4a3;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, .navigation a:active {
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content:"X";
+}
+
 header, main, footer {
     max-width: 640px;
      
@@ -11,7 +63,7 @@ header, main, footer {
 header {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: #0b2116; 
+    background-color: #000000; 
    
     align-items: center;
     margin: 0;
@@ -20,7 +72,7 @@ header {
 }
 
 header h1 {
-    color: white;
+    color: rgb(255, 255, 0);
     margin: 0;
     padding: 1rem;
 }
@@ -29,7 +81,7 @@ main h2 {
     text-align: center;
 }
 
-nav {
+/* nav {
     display: grid;
     grid-template-rows:auto;
     background-color: rgb(22, 41, 27);
@@ -37,9 +89,9 @@ nav {
     align-items: center;
     margin: 0;
     padding: 1rem;
-}
+} */
 
-nav ul {
+/* nav ul {
     list-style: none;
     display: grid;
     grid-template-columns: 1fr;
@@ -65,7 +117,7 @@ nav a:hover {
 
 .active {
     color: yellow;
-}
+} */
 
 /* Main content styles */
 main {
