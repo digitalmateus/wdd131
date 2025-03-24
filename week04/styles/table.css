@@ -1,0 +1,48 @@
+body {
+    padding: 10%;
+}
+
+table{
+    width:300px;
+    border: 1px solid gray;
+    border-collapse: collapse;
+
+    caption {
+        caption-side: bottom;
+        font-size: smaller;
+        padding: 0.2rem;
+    }
+
+    th, td {
+        padding: 0.5em 1rem;
+        border: 1px solid gray;
+        white-space: pre;
+    }
+
+    thead th, tbody td {
+        text-align: center;
+    }
+
+    thead {
+        color: #fff;
+        background: #191a1c;
+    }
+
+    th {
+        padding: 1rem;
+        font-size: larger;
+    }
+
+    tr:nth-last-child(1) { 
+        background-color: #4b4b4b;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #eee;
+    }
+
+    .blank {
+        background-color: #00305f;
+    }
+}
+
