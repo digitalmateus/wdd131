@@ -4,7 +4,7 @@
 }
 
 body {
-   display: flex;
+   display: grid;
    text-align: center;
 }
 
