@@ -1,0 +1,123 @@
+/* Basic styles */
+* {
+    font-family: "Roboto", sans-serif;
+    max-width:fit-content%;
+}
+
+#menu {
+    display:block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: rgb(0, 0, 62);
+    color: aliceblue;
+}
+
+#menu::before {
+    content: "|||";
+}
+
+nav {
+    background-color: rgba(11, 35, 6, 0.601);
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a{
+    display: block;
+    padding: .75rem;
+    text-align: center;
+    text-decoration: none;
+    color: #9de4a3;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, .navigation a:active {
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content:"X";
+}
+
+header, main, footer {
+    max-width:fit-content;
+     
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000; 
+    align-items: center;
+    margin: 0;
+    text-align: center;
+    max-width: 59.9em;
+    
+}
+
+header h1 {
+    color: rgb(255, 255, 0);
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main {
+    display: grid;
+    background-color: #ececec;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 20px;
+}
+
+main .temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+main .temple-grid figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+main .temple-grid figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+main .temple-grid img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 0.5rem; 
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: #051206; 
+    padding: 1rem;
+}

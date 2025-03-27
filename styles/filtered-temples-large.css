@@ -1,0 +1,26 @@
+@media screen and (min-width: 60em) {
+  
+    .navigation {
+      display: flex;
+    }
+  
+    .navigation li {
+      display: block;
+      flex: 1 1 100%;
+    }
+  
+    .navigation a{
+      text-align: center;
+    }
+  
+    #menu {
+      display: none;
+    }
+  
+  
+  main .temple-grid {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  }
