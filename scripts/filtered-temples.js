@@ -8,6 +8,7 @@ const oldTemplesLink = document.querySelector("#oldTemples");
 const newTemplesLink = document.querySelector("#newTemples");
 const smallTemplesLink = document.querySelector("#smallTemples");
 const largeTemplesLink = document.querySelector("#largeTemples");
+const allTemplesLink = document.querySelector("#allTemples");
 
 const temples = [
     {
@@ -101,35 +102,44 @@ const temples = [
 
 createTempleCard(temples);
 
-
-
 oldTemplesLink.addEventListener("click", () => {
-  let test_value = temple.dedicated.split(",");
-  console.log(test_value.length);
-  document.querySelector(".templegrid").innerHTML = "";
-  let oldTemples = temples.filter(temple => (parseInt(temple.dedicated.split(",")[0])) < 1900);
-  console.log(parseInt(temple.dedicated.split(",")[0]));
-  createTempleCard(oldTemples);
+  createTempleCard(temples.filter(temple => temple.dedicated.includes("18")));
+});
+
+newTemplesLink.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.dedicated.includes("202")));
+});
+
+smallTemplesLink.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.area < 20000));
+});
+
+largeTemplesLink.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.area >= 20000));
+});
+
+allTemplesLink.addEventListener("click", () => {
+  createTempleCard(temples);
 });
 
 
 function createTempleCard(filteredTemples) {
-    // document.querySelector(".templegrid").innerHTML = "";
+    document.querySelector(".temple-grid").innerHTML = "";
     filteredTemples.forEach(temple => {
-        let card = document.createElement("section");
-        let name = document.createElement("h3");
-        let location = document.createElement("p");
-        let dedication = document.createElement("p");
-        let area = document.createElement("p");
-        let img = document.createElement("img");
+      let card = document.createElement("section");
+      let name = document.createElement("h3");
+      let location = document.createElement("p");
+      let dedication = document.createElement("p");
+      let area = document.createElement("p");
+      let img = document.createElement("img");
     
     
         name.textContent = temple.templeName;
         location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
         dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
-        area.innerHTML = `<span class="label"Size:</span> ${temple.area} sq ft`;
+        area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
         img.setAttribute("src", temple.imageUrl);
-        img.setAttribute("alt", `${temple.templename}Temple`);
+        img.setAttribute("alt", `${temple.templeName} Temple`);
         img.setAttribute("loading", "lazy");
         img.setAttribute("width", "400");
         img.setAttribute("height","300");

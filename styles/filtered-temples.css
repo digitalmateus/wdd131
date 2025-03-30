@@ -2,6 +2,7 @@
 * {
     font-family: "Roboto", sans-serif;
     max-width:fit-content;
+    text-align: center;
 }
 
 #menu {
@@ -110,8 +111,8 @@ main .temple-grid figcaption {
 }
 
 main .temple-grid img {
-    width: 100%; 
-    height: auto; 
+    width: 400px; 
+    height: 300px; 
     border-radius: 0.5rem; 
 }
 
