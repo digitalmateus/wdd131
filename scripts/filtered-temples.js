@@ -104,7 +104,11 @@ createTempleCard(temples);
 
 
 oldTemplesLink.addEventListener("click", () => {
+  let test_value = temple.dedicated.split(",");
+  console.log(test_value.length);
+  document.querySelector(".templegrid").innerHTML = "";
   let oldTemples = temples.filter(temple => (parseInt(temple.dedicated.split(",")[0])) < 1900);
+  console.log(parseInt(temple.dedicated.split(",")[0]));
   createTempleCard(oldTemples);
 });
 

@@ -120,4 +120,5 @@ footer {
     color: white;
     background-color: #051206; 
     padding: 1rem;
+    max-width:fit-content;
 }
