@@ -1,0 +1,90 @@
+:root {
+    --primary-color: #3A4076; /* H1 and paragraph color */
+    --secondary-color: #F54600; /* H2 color */
+    --background-color: #ffffff; /* Body background */
+    --accent-color: #50753b; /* Title background */
+}
+
+
+body, h1, h2, p, img, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    padding: 10px;
+    background-color:#e6e6e6;
+}
+
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title .logo {
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.title h1 {
+    font-size: 2.8rem;
+    color: #3A4076;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+
+main div {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #F54600;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #3A4076;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.wireframe img {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    padding: 30px 0;
+    border-top: 1px solid #ddd;
+    background-color: var(--primary-color);
+}
+
+footer p {
+    color: #f9f9f9;
+}

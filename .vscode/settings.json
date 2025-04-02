@@ -1,0 +1,6 @@
+{
+    "editor.fontSize": 15,
+    "editor.inlineSuggest.edits.showCollapsed": true,
+    "editor.inlineSuggest.showToolbar": "always",
+    "editor.suggest.preview": true
+}
