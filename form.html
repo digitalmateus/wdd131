@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation Form | Mateus Nunes | WDD 131</title>
+    <meta name="description" content="A evaluation form for WDD 131 course">
+    <meta name="author" content="Mateus Nunes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/review_small.css">
+    <!-- <link rel="stylesheet" href="styles/temples-large.css"> -->
+    <script src="scripts/evaluation.js" defer></script>
+
+    
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1> 
+    </header>
+    <main>
+        <form method="get" action="review.html" class="wf1">
+            
+            <label>Product name
+                <select name="Product" id="productSelect" required>
+                    <option value="" disabled selected>Select a Product</option>
+                </select>
+            </label>
+            
+            <div>Overall Rating</div>
+            <label><input type="radio" name="star" value="1star" id="1star" required>*</label>
+            <label><input type="radio" name="star" value="2star" id="2star" required>**</label>
+            <label><input type="radio" name="star" value="3star" id="3star" required>***</label>
+            <label><input type="radio" name="star" value="4star" id="4star" required>****</label>
+            <label><input type="radio" name="star" value="5star" id="5star" required>*****</label>
+
+            <label>Date of Installation*<input type="date" name="installationDate" id="installationDate" required></label>
+
+            <label>Useful Features - select all that apply</label>
+            <div id="features">
+                <label><input type="checkbox" name="features" value="Durability" id="durability"> Durability</label>
+                <label><input type="checkbox" name="features" value="Performance" id="performance"> Performance</label>
+                <label><input type="checkbox" name="features" value="Easy of Use" id="easy"> Easy of Use</label>
+                <label><input type="checkbox" name="features" value="Design" id="design"> Design</label>
+            </div>
+
+            <label>Your Review - optional</label>
+            <textarea name="comments" id="comments" rows="5" cols="30" placeholder="Please leave your comments here"></textarea>
+
+            <label>Your Name - optional<input type="text" name="username" id="username" placeholder="User Name"></label>
+
+            <input type="submit" value="Post Review" id="submit">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Mateus Nunes | Brazil</p>
+        <p> Last updated <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>
