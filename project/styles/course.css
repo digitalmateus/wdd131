@@ -1,0 +1,325 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+:root {
+    box-sizing: border-box;
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --main-color-blue: #0018F5;
+    --main-color-darkblue: #3A4076;
+    --sec-color-green: #59F500;
+    --sec-color-darkgreen: #50753B;
+    --third-color-orange: #F54600;
+
+}
+
+body {
+    font-size: 16px;
+    font-family: Raleway, sans-serif;
+    background-color: #f4f4f4;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	margin: auto;
+    max-width: 100vw;
+}
+
+.navigation {
+	list-style: none; 
+	display: flex; 
+	flex-wrap: nowrap; 
+	justify-content: center;
+	align-items: center; 
+	background-color: var(--main-color-darkblue);
+	align-items: center;
+    padding: 1rem;
+    margin: 0; 
+}
+
+.logo-container {
+    flex: 0 0 auto;
+}
+
+.navigation li {
+    list-style: none;
+    margin: 0 1rem; 
+    padding: 0; 
+}
+
+.navigation-li {
+	display: flex; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0;
+    text-align: center;
+    margin: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.navigation-li li {
+    margin: 0 1rem; 
+}
+.navigation-li:hover {
+    background-color: var(--main-color-blue);
+}
+.navigation a {
+	display: block;
+	color: #fff; 
+	padding: 0.75rem;
+	text-decoration: none; 
+	text-align: center;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+	color: var(--sec-color-green);
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+}
+
+.hero {
+    width: 100%;
+    height: 70vh;
+    background-image: url(../images/design-bg.webp);
+    background-color: var(--main-color-darkblue);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* filter: brightness(40%); Reduces brightness to make it darker */
+    display: grid;
+    align-items: center;
+    justify-content:center;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    color: var(--sec-color-green);
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--third-color-orange);
+}
+
+section {
+    padding: 3rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: var(--main-color-darkblue);
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+section ul {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+    line-height: 1.5;
+    list-style-type: disc;
+}
+
+/* testimonials  */
+
+.testimonials {
+    padding: 4rem;
+    background-color: var(--third-color-orange);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px var(--main-color-darkblue);
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.testimonials img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.testimonials p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* call to action */
+
+.calltoaction {
+    padding: 4rem;
+    background-color: var(--main-color-darkblue);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px var(--main-color-blue);
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.calltoaction-image {
+    width: 200px;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.calltoaction h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.calltoaction p {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.enroll-button {
+    background-color: var(--sec-color-green);
+    color: var(--third-color-orange);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.enroll-button:hover {
+    background-color: var(--third-color-orange);
+    color: var(--sec-color-green);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+/* about me page */
+
+.aboutme {
+    padding: 4rem;
+    background-color: var(--main-color-darkblue);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px var(--main-color-blue);
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.mateus-nunes {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    margin: 3rem 3rem 1rem 3rem;
+}
+
+.aboutme h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.aboutme h2 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.aboutme p {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: 30px;
+    margin: 0 1rem;
+    transition: transform 0.3s ease;
+    margin-bottom: 3rem;
+}
+
+/* footer*/
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    padding: 30px 0;
+    border-top: 1px solid #ddd;
+    background-color: var(--main-color-darkblue);
+}
+
+footer p {
+    color: #f9f9f9;
+}
