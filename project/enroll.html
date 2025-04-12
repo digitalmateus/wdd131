@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Mateus Nunes">
+        <meta name="description" content="A course that will transform you into a Graphic Designer">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <meta name="author" content="Mateus Nunes">
+        <link rel="stylesheet" href="styles/course.css">
+        <link rel="stylesheet" href="styles/course_large.css">
+        <script src="scripts/course.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <nav class="navigation">
+                <div class="logo-container">
+                    <img src="images/logo_transparent.png" alt="Designer Pro Logo" class="logo">
+                </div>
+                <ul class="navigation-li">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="enroll.html">ENROLL</a></li>
+                </ul>
+            </nav> 
+            <div class="enroll">
+                <h1>Choose<br> the best option<br>for your needs!</h1>
+                <hr>
+                <p>Different plans that fits all needs.</p>
+            </div>
+            <div class="pricing" id="pricing">
+                <div class="pricing-options">
+                    <div class="pricing-option">
+                        <h3>Basic</h3>
+                        <p>$99,00</p>
+                        <p>Access to all course materials and resources.</p>
+                    </div>
+                    <div class="pricing-option">
+                        <h3>Standard</h3>
+                        <p>$199,00</p>
+                        <p>Access to all course materials, resources, and one-on-one mentorship.</p>
+                    </div>
+                    <div class="pricing-option">
+                        <h3>Premium</h3>
+                        <p>$299,00</p>
+                        <p>Access to all course materials, resources, one-on-one mentorship, and exclusive webinars.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="form" id="contact">
+                <h2>Your Plan</h2>
+                <p>Fill out the form below to enroll in the course and choose your plan.</p>
+                <form action="thankyou.html" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="plan">Choose your plan:</label>
+                    <select id="plan" name="plan" required>
+                        <option value="" disabled selected>Select a plan</option>
+                        <option value="basic">Basic</option>
+                        <option value="standard">Standard</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                    <button type="submit">I want this Plan</button>
+            </div>
+        </main> 
+        <footer>
+            <p>&copy; <span id="currentYear"></span> Mateus Nunes | Brazil</p>
+            <p> Last updated <span id="lastModified"></span></p>
+        </footer>       
+    </body>
